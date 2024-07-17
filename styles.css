@@ -1,0 +1,208 @@
+/* Custom CSS for XYZ Restaurant website */
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background for the entire page */
+    color: #333; /* Default text color */
+}
+
+.header {
+    background-color: #343a40; /* Dark background */
+    color: #fff; /* White text color */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ccc !important;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.about {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 60px 0;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+.photos img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.photos .carousel-inner img {
+    max-height: 500px; /* Adjust height of photos carousel */
+}
+
+.photos .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 10px;
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+.photos .carousel-caption h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.menu {
+    background-color: #fff; /* White background */
+    padding: 60px 0;
+}
+
+.menu .card {
+    border: none;
+    transition: transform 0.3s ease;
+    height: 100%; /* Ensure all cards have the same height */
+}
+
+.menu .card:hover {
+    transform: translateY(-10px);
+}
+
+.reviews {
+    padding: 40px 0;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.map-container {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact {
+    background-color: #343a40; /* Dark background */
+    color: #fff; /* White text color */
+    padding: 60px 0;
+}
+
+.contact h3 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact p {
+    color: #ccc;
+}
+
+.contact ul {
+    padding: 0;
+    list-style: none;
+}
+
+.contact ul li {
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+.contact ul li a {
+    color: #ccc;
+}
+
+.contact ul li a:hover {
+    color: #fff;
+}
+
+/* Adjust width of photos carousel */
+.photos .carousel-inner {
+    max-width: 800px; /* Set your desired maximum width */
+    margin: 0 auto; /* Center align carousel */
+}
+
+/* Ensure cards in menu carousel have the same size */
+.menu .card {
+    min-height: 425px; /* Set your desired height */
+}
+
+/* Optional: Center align text inside cards */
+.menu .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Transparent background for carousel caption */
+.photos .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+}
+
+/* Previous and Next Carousel Icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black; /* Change icon color to black */
+}
+
+/* Adjust width of review carousel */
+.review-carousel-inner {
+    max-width: 1000px; /* Set your desired maximum width */
+    margin: 0 auto; /* Center align carousel */
+}
+
+.review-card {
+    margin: 10px;
+    background-color: #ebebeb; /* Light gray background */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 420px;
+}
+
+.review-card-text {
+    padding: 20px;
+    font-size: 18px;
+    color: #333; /* Dark gray text */
+}
+
+.review-author-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #666; /* Gray text */
+    margin-bottom: 10px;
+}
+
+.review-star-rating {
+    font-size: 2rem;
+    color: #ffc107; /* Yellow star color */
+    padding: 20px;
+}
+
+.background-image {
+    background-image: url('image/utsav.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    width: 250px;
+}
+
+.logo {
+    background: white;
+}

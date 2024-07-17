@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav Hotel</title>
+    <link rel="icon" href="image/utsav.jpg" type="image/x-icon"> <!-- Favicon -->
+    <link rel="apple-touch-icon" href="image/utsav.jpg"> <!-- For Apple devices -->
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <img src="image/utsav.jpg" alt="Logo" class="navbar-icon">
+                <a class="navbar-brand" href="#">Hotel Utsav</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#topsellers">Top Sellers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#map">Location</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="logo" class="logo">
+        <div class="container section background-image">
+        </div>
+    </section>
+
+    <section id="about" class="about section">
+        <div class="container">
+            <h2>About Us</h2>
+            <br>
+            <p>
+                <h5>Welcome to Hotel Utsav</h5>
+                At Utsav, we are passionate about seafood. Located in the heart of Kumta, we have been proudly serving the freshest catch and exquisite seafood dishes since 1988.<br><br>
+                <h5>Our Story</h5>
+                Founded by Nagaraj Shet, a seafood enthusiast, Utsav has become synonymous with exceptional seafood dining in Kumta. What started as a humble seafood shack has grown into a renowned destination for seafood lovers.<br><br>
+                <h5>Our Commitment</h5>
+                At Utsav, we believe in showcasing the natural flavors of seafood through creative and innovative dishes. From succulent grilled fish to decadent prawns, crab dishes, each dish is crafted with the finest ingredients sourced from trusted suppliers. Beyond providing delicious meals, we aim to create a warm and welcoming environment where every guest feels like family. Whether you're celebrating a special occasion or enjoying a casual meal with friends, we promise attentive service and a dining experience to remember.<br><br>
+                <h5>Visit Us</h5>
+                Indulge in the flavors of the seafood at Utsav. Whether you're craving a seafood feast or looking to enjoy a relaxing meal by the waterfront, our restaurant offers a warm and inviting atmosphere perfect for any occasion.<br><br>
+                Thank you for choosing Hotel Utsav. We look forward to welcoming you to a seafood dining experience like no other.
+            </p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu section bg-light">
+        <div class="container">
+            <h2>Menu</h2>
+            <!-- Carousel for Menu -->
+            <div id="menu-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" id="menu-list">
+                    
+                </div>
+                <a class="carousel-control-prev" href="#menu-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#menu-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="topsellers" class="photos section">
+        <div class="container">
+            <h2>Top Sellers</h2>
+            <!-- Carousel for Photos -->
+            <div id="photo-carousel" class="carousel slide photos" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div id="topsellers-list" class="topsellers-list">
+                        <!-- Reviews will be dynamically added here -->
+                    </div>
+                <a class="carousel-control-prev" href="#photo-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#photo-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews section bg-light">
+        <div class="container">
+            <h2>Our Google Reviews</h2>
+            <div id="review-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div id="reviews-list" class="reviews-list">
+                        <!-- Reviews will be dynamically added here -->
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#review-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#review-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="map section">
+        <div class="container">
+            <h2>Location</h2>
+            <div id="map-container" class="map-container">
+                <a href="https://www.google.com/maps/place/Utsav+Hotel/@14.4265923,74.4060954,17z/data=!4m6!3m5!1s0x3bbc261c553823df:0xefa1af544a934784!8m2!3d14.4266913!4d74.4086993!16s%2Fg%2F11byygg8j1?entry=ttu">
+                    <img src="image/location.png" class="d-block w-100 h-100" alt="Utsav Hotel Location">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Visit Us</h3>
+                    <p>Utsav Hotel<br>Near Kumbeshwar Temple Road,<br>Kumta, Karnataka<br>581343</p>
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 12:00 AM - 3:30 PM<br>Tuesday - Sunday: 7:00 PM - 10:00 PM</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Contact Information</h3>
+                    <p><strong>Phone:</strong> +91 9242847272</p>
+                    <h3>Follow Us</h3>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/utsav.kumta"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="https://g.co/kgs/k8QJX5a"><i class="fab fa-google"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
