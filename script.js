@@ -18,38 +18,21 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
   
     const carouselItemsContainer = document.getElementById('menu-list');
-    let i = 0;
-    while (i < menu.length) {
-      const isActive = i === 0 ? 'active' : '';
-      let cardRow = '';
-      
-      for (let j = i; j < i + 3 && j < menu.length; j++) {
-        const food = menu[j]
-        const card = `
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <img src="${food.image}" class="card-img-top" alt="${food.alt}">
-              <div class="card-body">
-                <h5 class="card-title">${food.name}</h5>
-                <p class="card-text">${food.desc}</p>
-              </div>
-            </div>
-          </div>
-        `
-        cardRow += card;
-      }
-      i = i + 3;
-
+    menu.forEach((food, index) => {
+      const isActive = index === 0 ? 'active' : '';
       const item = `
         <div class="carousel-item ${isActive}">
-          <div class="row">
-            ${cardRow}
+          <div class="card">
+            <img src="${food.image}" class="card-img-top" alt="${food.alt}">
+            <div class="card-body">
+              <h5 class="card-title">${food.name}</h5>
+              <p class="card-text">${food.desc}</p>
+            </div>
           </div>
         </div>
         `;
-
       carouselItemsContainer.innerHTML += item;
-    }
+    });
 });
   
 document.addEventListener("DOMContentLoaded", function() {
@@ -68,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const isActive = index === 0 ? 'active' : '';
       const item = `
         <div class="carousel-item ${isActive}">
-            <img src="${food.image}" class="d-block w-100" alt="${food.alt}">
+            <img src="${food.image}" class="card-img-top" alt="${food.alt}">
             <div class="carousel-caption">
                 <h5>${food.name}</h5>
             </div>
